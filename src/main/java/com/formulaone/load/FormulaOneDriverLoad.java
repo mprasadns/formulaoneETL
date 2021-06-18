@@ -21,7 +21,7 @@ public class FormulaOneDriverLoad {
         amountOfDriversToLoad = (amountOfDriversToLoad > 0) ? amountOfDriversToLoad : 3;
         amountOfDriversToLoad = Math.min(formulaOneDrivers.size(), amountOfDriversToLoad);
 
-        if(formulaOneDrivers != null && formulaOneDrivers.size() >= amountOfDriversToLoad) {
+        if(formulaOneDrivers.size() >= amountOfDriversToLoad) {
             return formulaOneDrivers.subList(0, amountOfDriversToLoad);
         }
         return null;
